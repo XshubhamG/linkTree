@@ -31,6 +31,7 @@ img {
     width: 100%;
     max-width: 120px;
     margin: auto;
+    border-radius: 50%;
 }
 
 main {
@@ -59,6 +60,16 @@ main {
 
 }
 
+/* profile container */
+
+.profile-container {
+   width : 120px;
+   border-radius : 50%;
+   margin: auto;
+
+}
+
+
 /* Typography  */
 
 h1 {
@@ -67,6 +78,7 @@ h1 {
 }
 
 p {
+    font-family: var(--font-quote);
     color : var(--chocolate-300);
     text-shadow: 0 0 10px black;
 }
@@ -78,6 +90,7 @@ p {
 
 
 .link-container a p {
+    font-family: var(--font-main);
     color : var(--greenish-blue);
 }
 
@@ -99,7 +112,86 @@ p {
     width : 200px;
     padding: .5rem 0;
     margin: auto;
+    border-radius: 10px;
+    transition : all 100ms ease-in;
 }
 
+/* github */
+
+.github:hover {
+   border-color: black;
+   color: black;
+   background-color: rgba(256, 256, 256, 0.8);
+   box-shadow: 1px 1px 10px rgba(256, 256, 256, .5);
+}
+
+.github:hover p {
+   color : black;
+}
+
+/* twitter */
+
+.twitter:hover {
+   border-color : #1DA1F2;
+   color : #1DA1F2;
+   background-color: rgba(0, 0, 0, 0.5);
+   box-shadow: 1px 1px 10px #1DA1F299;
+
+}
+
+.twitter:hover p {
+   color : #1DA1F2;
+}
+
+/* linkedIn */
+
+.linkedIn:hover {
+    border-color : #0072b1;
+    color : #0072b1;
+    background-color : rgba(256, 256, 256);
+    box-shadow : 1px 1px 10px #0072b1ee;
+}
+
+.linkedIn:hover p {
+    color : #0072b1;
+}
+
+/* Instagram */
+
+.instagram:hover {
+    border-color : #fa7e1e;
+    color: #fa7e1e;
+    background-color : rgba(256, 256, 256);
+    /*box-shadow : 1px 1px 10px #fa7e1e88;*/
+}
+
+.instagram:hover p {
+    color : #fa7e1e;
+}
+
+/* Gmail */
+
+.gmail:hover {
+    border-color : #34A853;
+    color : #34A853;
+    background-color: rgba(256, 256, 256);
+}
+
+.gmail:hover p {
+    text-shadow : 0 0 10px black;
+    color : #34A853;
+}
+
+/* discord */
+
+.discord:hover {
+    border-color : #7289DA;
+    color : #7289DA;
+    background-color : rgba(256, 256, 256);
+}
+
+.discord:hover p {
+    color : #7289DA;
+}
 
 
