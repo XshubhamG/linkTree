@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Space+Grotesk:wght@500&display=swap');
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Space Grotesk', sans-serif; */
+
+:root {
+   --font-quote : 'Roboto', sans-serif;
+   --font-main : 'Space Grotesk', sans-serif;
+   --greenish-blue : hsl(163, 100%, 33%);
+   --white : hsl(180, 14%, 97%);
+   --chocolate-300 : hsl(357, 42%, 71%);
+   --chocolate-600 : hsl(11, 29%, 52%);
+   --chocolate-800 : hsl(14, 100%, 19%);
+   --link-border : .7rem;
+   --font-size : 1.125rem;
+}
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+
+body {
+    font-family : var(--font-main);
+    font-size : var(--font-size);
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 120px;
+    margin: auto;
+}
+
+main {
+    margin: 0;
+    box-sizing: border: box;
+    padding: 0;
+    min-height : 100vh;
+    width: 100%;
+    max-width : 400px;
+    display: grid;
+    place-items : center;
+    text-align : center;
+    background-image: url('https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    border-radius : var(--link-border);
+
+}
+
+/* Typography  */
+
+h1 {
+    color: var(--white);
+    font-style: italic;
+}
+
+p {
+    color : var(--chocolate-300);
+    text-shadow: 0 0 10px black;
+}
+
+.link-container a {
+    color : var(--greenish-blue);
+    text-decoration: none;
+}
+
+
+.link-container a p {
+    color : var(--greenish-blue);
+}
+
+
+/* link container */
+
+.link-container {
+    display: flex;
+    flex-direction : column;
+    gap: 1.5rem;
+}
+
+.link-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: 3px solid var(--greenish-blue);
+    width : 200px;
+    padding: .5rem 0;
+    margin: auto;
+}
+
+
+
